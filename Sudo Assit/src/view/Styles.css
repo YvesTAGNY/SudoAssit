@@ -61,3 +61,17 @@
   -fx-background-color: #b8925f;
   -fx-text-fill: white;
 }
+/*
+ * 
+ * Menu
+ * 
+ */
+ .menu-bar { 
+ 	-fx-background-color:  #cccccc;
+ }
+.menu-button{
+    -fx-background-color: #d3c8ba;
+}
+.menu-item {
+    -fx-background-color:  #cccccc;
+}
