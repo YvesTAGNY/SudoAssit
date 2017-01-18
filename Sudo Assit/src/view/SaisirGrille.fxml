@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 
@@ -18,7 +19,8 @@
                </font>
             </Label>
             <ComboBox layoutX="227.0" layoutY="26.0" prefWidth="150.0" promptText="9*9" />
-            <Button layoutX="164.0" layoutY="519.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="185.0" text="Valider" />
+            <Button layoutX="169.0" layoutY="515.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="185.0" text="Valider" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a37b49" height="407.0" layoutX="36.0" layoutY="87.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="451.0" />
          </children>
       </Pane>
    </children>

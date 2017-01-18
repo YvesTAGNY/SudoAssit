@@ -44,7 +44,7 @@
                         <Font name="Comic Sans MS Bold" size="36.0" />
                      </font>
                   </Text>
-                  <MenuBar layoutX="77.0" layoutY="443.0" prefHeight="25.0" prefWidth="58.0">
+                  <MenuBar layoutX="77.0" layoutY="457.0" prefHeight="25.0" prefWidth="58.0">
                     <menus>
                       <Menu mnemonicParsing="false" text="Plus">
                         <items>
