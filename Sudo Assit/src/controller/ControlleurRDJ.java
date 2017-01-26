@@ -13,6 +13,6 @@ public class ControlleurRDJ  implements Initializable {
 	   
 		public void initialize(URL location, ResourceBundle resources) {
 			// TODO Auto-generated method stub
-			webView.getEngine().load("file:///H:/Mes%20documents/4AIINFO/Dev%20IHM/MP_IHM/SudoAssit/Sudo%20Assit/resources/webrsc/r%E8gle%20grille%20sudoku.htm");
+			webView.getEngine().load("file:///H:/Mes%20documents/4AIINFO/Dev%20IHM/MP_IHM/SudoAssit/Sudo%20Assit/resources/rdj/rdj.html");
 		}
 }
