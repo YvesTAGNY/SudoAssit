@@ -1,0 +1,70 @@
+#pied {display:none;} 
+.ecran {display:none;} 
+.imprimante {display:inline;} 
+#cookieChoiceInfo {display:none;}
+input.trou, input.trou-zoom, input.trou_x16 {
+	font-family:arial,sans-serif;
+	font-size:26px;
+	color:#F08500;
+	border: 0; 
+	text-align:center;
+	vertical-align:bottom;
+	margin-top: 8px; 
+	padding:0;
+	width:45px;
+	height:40px;
+}
+input.trou2, input.trou2-zoom, input.trou2_x16 {
+	font-family: Verdana, Arial, sans-serif;
+	font-size:16px;
+	color:#0085F0;
+	border: 0; 
+	text-align:center;
+	vertical-align:bottom;
+	margin-top: 8px; 
+	padding:0;
+	width:45px;
+	height:40px;
+}
+input.trou3, input.trou3-zoom, input.trou3_x16 {
+	font-family: lucida handwriting,comic sans ms,cursive;;
+	font-size:8pt;
+	color:#0085F0;
+	border: 0;
+	text-align:center;
+	vertical-align:bottom;
+	margin-top: 8px;
+	padding:0;
+	width:45px;
+	height:40px;
+}
+input.trou4, input.trou4-zoom, input.trou4_x16 {
+	font-family: lucida handwriting,comic sans ms,cursive;;
+	font-size:6pt;
+	color:#0085F0;
+	border: 0;
+	text-align:center;
+	vertical-align:bottom;
+	margin-top: 8px;
+	padding:0;
+	width:45px;
+	height:40px;
+}
+input.chiffre, input.chiffre-zoom, input.chiffre_x16 {
+	font-family:arial,sans-serif;
+	font-size:26px;
+	color:#000000;
+	border: 0; 
+	text-align:center;
+	vertical-align:bottom;
+	margin-top: 8px; 
+	padding:0;
+	width:45px;
+	height:40px;
+	cursor:default;
+}
+
+#numero {
+font: 10px Verdana, Arial, sans-serif;
+color:#848484;
+}

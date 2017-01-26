@@ -1,0 +1,46 @@
+body {font-family: Verdana,Arial,sans-serif;}
+.tours {
+	border-collapse:collapse; 
+	border: #848484 solid 2px;
+	margin: 0;
+	padding:0; 
+}
+.tableau {
+	border-collapse:collapse; 
+	border: #848484 solid 1px;
+	margin: 0;
+	padding:0; 
+}
+
+.tdd{
+	border: solid 1px #848484; 
+	margin: 0;
+	padding:0; 	
+}
+td.tdd input {text-transform:uppercase;}
+td.diago, td.diago input {
+	background-color:#e3e3e3;
+}
+table.irreg {border:#000 solid 3px;}
+td.border_R {border-right:#000 solid 3px;}
+td.border_B {border-bottom:#000 solid 3px;}
+h1 {
+font-family: Optima, "Trebuchet MS", Lucida, Arial, Geneva, Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
+font-size: 16px;
+color:#FFF;
+letter-spacing: 0.05em;
+}
+h2 {
+font-family: Verdana, Arial, sans-serif;
+font-size: 14px;
+color:#000;
+}
+h3 {
+font-size: 12px;
+color:#000;
+}
+p, ol {
+font-family: Verdana, Arial, sans-serif;
+font-size: 11px;
+color:#000;
+}
