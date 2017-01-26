@@ -8,11 +8,13 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Ellipse?>
@@ -20,7 +22,6 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-
 
 <AnchorPane style="-fx-background-color: #003333;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -79,11 +80,113 @@
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b8925f" height="370.0" layoutX="7.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="512.0" />
                         <Circle fill="#003333" layoutX="3.0" layoutY="7.0" radius="26.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a37b49" height="350.0" layoutX="81.0" layoutY="25.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="350.0" />
-                        <ImageView fitHeight="335.0" fitWidth="335.0" layoutX="89.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../resources/ex_de_grille.png" />
-                           </image>
-                        </ImageView>
+                        <GridPane id="grille" alignment="CENTER" layoutX="81.0" layoutY="25.0" prefHeight="350.0" prefWidth="350.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <TextField alignment="CENTER" promptText="0" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="1" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="2" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.rowIndex="1" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.rowIndex="2" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="3" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="4" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="5" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="6" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="7" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="8" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.rowIndex="3" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.rowIndex="4" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.rowIndex="5" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.rowIndex="6" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.rowIndex="7" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.rowIndex="8" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+                              <TextField alignment="CENTER" promptText="0" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+                           </children>
+                        </GridPane>
                      </children>
                   </Pane>
                </children>
