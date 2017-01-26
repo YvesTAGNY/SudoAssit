@@ -4,10 +4,6 @@
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -23,7 +19,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane style="-fx-background-color: #003333;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControlleurPagePrincipale">
+<AnchorPane style="-fx-background-color: #003333;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <HBox prefHeight="545.0" prefWidth="745.0">
          <children>
@@ -31,10 +27,10 @@
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7e5130" height="508.0" layoutX="11.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="191.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a37b49" height="125.0" layoutX="5.0" layoutY="29.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="205.0" />
-                  <Button id="tactiques" layoutX="38.0" layoutY="222.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" text="Tactiques" />
-                  <Button id="regleDuJeu" layoutX="38.0" layoutY="266.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" text="Règles du jeu" />
-                  <Button id="saisirUneGrille" layoutX="39.0" layoutY="325.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" text="Saisir une grille" />
-                  <Button id="scannerUneGrille" layoutX="39.0" layoutY="369.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" text="Scanner une grille" />
+                  <Button layoutX="38.0" layoutY="222.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" text="Tactiques" />
+                  <Button layoutX="38.0" layoutY="266.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" text="Règles du jeu" />
+                  <Button layoutX="39.0" layoutY="325.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" text="Saisir une grille" />
+                  <Button layoutX="39.0" layoutY="369.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" text="Scanner une grille" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="25.0" layoutX="18.0" layoutY="181.0" stroke="WHITE" strokeType="INSIDE" width="177.0" />
                   <Ellipse fill="#1f93ff00" layoutX="105.0" layoutY="92.0" radiusX="100.0" radiusY="63.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
                   <Line endX="100.0" layoutX="108.0" layoutY="311.0" startX="-100.0" stroke="WHITE" />
@@ -45,18 +41,14 @@
                         <Font name="Comic Sans MS Bold" size="36.0" />
                      </font>
                   </Text>
-                  <MenuBar layoutX="77.0" layoutY="457.0" prefHeight="25.0" prefWidth="58.0">
-                    <menus>
-                      <Menu mnemonicParsing="false" text="Plus">
-                        <items>
-                          <MenuItem mnemonicParsing="false" text="Ouvier" />
-                              <MenuItem mnemonicParsing="false" text="Enregistrer" />
-                              <SeparatorMenuItem mnemonicParsing="false" />
-                              <MenuItem mnemonicParsing="false" text="Score" />
-                        </items>
-                      </Menu>
-                    </menus>
-                  </MenuBar>
+                  <Button layoutX="40.0" layoutY="447.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" text="Plus" />
+                  <Pane layoutX="36.0" layoutY="306.0" prefHeight="140.0" prefWidth="140.0" style="-fx-background-color: #7e5130; -fx-border-color: black;" visible="false">
+                     <children>
+                        <Button layoutX="4.0" layoutY="11.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" text="Ouvrir" />
+                        <Button layoutX="4.0" layoutY="54.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" text="Enregistrer" />
+                        <Button layoutX="4.0" layoutY="98.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" text="Scores" />
+                     </children>
+                  </Pane>
                </children>
             </Pane>
             <VBox prefHeight="532.0" prefWidth="539.0">
@@ -71,7 +63,7 @@
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c9d5e1" height="61.0" layoutX="61.0" layoutY="47.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="82.0" />
                         <CheckBox layoutX="61.0" layoutY="47.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="82.0" text="Assit" />
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c9d5e1" height="61.0" layoutX="239.0" layoutY="47.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="82.0" />
-                        <ComboBox id="niveau" layoutX="246.0" layoutY="74.0" prefHeight="25.0" prefWidth="68.0" />
+                        <ComboBox layoutX="246.0" layoutY="74.0" prefHeight="25.0" prefWidth="68.0" />
                         <Label layoutX="246.0" layoutY="53.0" text="Niveau :" />
                      </children>
                   </Pane>
