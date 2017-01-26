@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#85642ec2" height="420.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <VBox prefHeight="420.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TabPane prefHeight="61.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Tactiques de base">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="32.0" prefWidth="289.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="185.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../heave.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e8e8e8" height="200.0" stroke="BLACK" strokeType="INSIDE" width="510.0" />
+                              <Label alignment="CENTER" layoutX="40.0" layoutY="-1.0" prefHeight="30.0" prefWidth="247.0" stylesheets="@Styles.css" text="1- Seul dans une région " textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Tactiques Intermédiaires">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children></VBox>
+   </children>
+</AnchorPane>
