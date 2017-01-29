@@ -15,6 +15,7 @@ public class Main extends Application {
 	        Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("/view/Styles.css").toExternalForm());
 			primaryStage.setScene(scene);
+			primaryStage.setTitle("Sudo Assit");
 			primaryStage.show();
 		} catch(Exception e) {
 			e.printStackTrace();
