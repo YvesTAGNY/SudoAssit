@@ -23,7 +23,7 @@
             </Label>
             <ImageView fitHeight="318.0" fitWidth="204.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../resources/ex_de_grille.png" />
+                  <Image url="@../resources/ex_de_grille.png" />
                </image>
                <VBox.margin>
                   <Insets />
