@@ -55,6 +55,7 @@ public class ControlleurPagePrincipale implements Initializable {
 	
 	@FXML
 	protected void doTactiques(ActionEvent event) throws IOException {
+		ControlleurHTMLView.sreem = 2;
 		//ouverture de la fenetre Tactiques
         final URL url = getClass().getResource("/view/Tactiques.fxml");
         final FXMLLoader fxmlLoader = new FXMLLoader(url);
@@ -67,7 +68,7 @@ public class ControlleurPagePrincipale implements Initializable {
 	
 	@FXML
 	protected void doRegleDuJeu(ActionEvent event) throws IOException {
-		
+		  ControlleurHTMLView.sreem = 1;
         //ouverture de la fenetre Regle Du Jeu
         final URL url = getClass().getResource("/view/RegleDuJeu.fxml");
         final FXMLLoader fxmlLoader = new FXMLLoader(url);

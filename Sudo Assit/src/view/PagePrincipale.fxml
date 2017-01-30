@@ -42,7 +42,7 @@
                      </font>
                   </Text>
                   <Button fx:id="plus" layoutX="40.0" layoutY="447.0" mnemonicParsing="false" onAction="#doPlus" prefHeight="33.0" prefWidth="133.0" text="Plus" />
-                  <Pane layoutX="34.0" layoutY="307.0" prefHeight="140.0" prefWidth="148.0" style="-fx-background-color: #a37b49; -fx-border-color: black; -fx-border-width: 3;" visible="false">
+                  <Pane fx:id="paneplus" layoutX="34.0" layoutY="307.0" prefHeight="140.0" prefWidth="148.0" style="-fx-background-color: #a37b49; -fx-border-color: black; -fx-border-width: 3;" visible="false">
                      <children>
                         <Button layoutX="8.0" layoutY="11.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" text="Ouvrir" />
                         <Button layoutX="8.0" layoutY="54.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" text="Enregistrer" />

@@ -9,11 +9,19 @@ import javafx.scene.web.WebView;
 
 public class ControlleurHTMLView  implements Initializable {
 	
-	   @FXML private WebView webView;
+		public static int sreem = 0;
+	   @FXML private WebView webViewrdj;
+	   @FXML private WebView webViewtb;
 	   
 		public void initialize(URL location, ResourceBundle resources) {
 			// TODO Auto-generated method stub
-			final URL url = getClass().getResource("/resources/rdj.htm"); 
-			webView.getEngine().load(url.toExternalForm());
+			if(sreem == 1){
+				final URL urlrdj = getClass().getResource("/resources/rdj.htm"); 
+				webViewrdj.getEngine().load(urlrdj.toExternalForm());
+			}
+			if(sreem == 2){
+				final URL urltb = getClass().getResource("/resources/tb.htm"); 
+				webViewtb.getEngine().load(urltb.toExternalForm());
+			}
 		}
 }
