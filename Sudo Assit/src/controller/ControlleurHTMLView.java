@@ -12,6 +12,7 @@ public class ControlleurHTMLView  implements Initializable {
 		public static int sreem = 0;
 	   @FXML private WebView webViewrdj;
 	   @FXML private WebView webViewtb;
+	   @FXML private WebView webViewti;
 	   
 		public void initialize(URL location, ResourceBundle resources) {
 			// TODO Auto-generated method stub
@@ -22,6 +23,9 @@ public class ControlleurHTMLView  implements Initializable {
 			if(sreem == 2){
 				final URL urltb = getClass().getResource("/resources/tb.htm"); 
 				webViewtb.getEngine().load(urltb.toExternalForm());
+				
+				final URL urlti = getClass().getResource("/resources/ti.htm"); 
+				webViewti.getEngine().load(urlti.toExternalForm());
 			}
 		}
 }

@@ -3,37 +3,35 @@
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.web.WebView?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControlleurHTMLView">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b8925fc2" height="420.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
-      <TabPane prefHeight="61.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <tabs>
           <Tab text="Tactiques de base">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="231.0" prefWidth="600.0">
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="192.0" prefWidth="600.0" style="-fx-background-color: #b8925f;">
                      <children>
-                        <WebView fx:id="webViewtb" layoutY="9.0" prefHeight="352.0" prefWidth="600.0" />
+                        <WebView fx:id="webViewtb" layoutY="10.0" prefHeight="345.0" prefWidth="600.0" />
                      </children>
                   </AnchorPane>
             </content>
           </Tab>
           <Tab text="Tactiques Intermédiaires">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #b8925f;">
                      <children>
-                        <WebView layoutY="9.0" prefHeight="352.0" prefWidth="600.0" />
+                        <WebView fx:id="webViewti" layoutY="10.0" prefHeight="345.0" prefWidth="600.0" />
                      </children>
                   </AnchorPane>
             </content>
           </Tab>
             <Tab text="Tactiques Avancées">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #b8925f;">
                      <children>
-                        <WebView layoutY="9.0" prefHeight="352.0" prefWidth="600.0" />
+                        <WebView layoutY="10.0" prefHeight="345.0" prefWidth="600.0" />
                      </children>
                   </AnchorPane>
               </content>
