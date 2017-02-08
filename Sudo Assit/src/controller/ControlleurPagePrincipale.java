@@ -15,16 +15,18 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class ControlleurPagePrincipale implements Initializable {
 	
+	public static int gridPaneActive = 9;
+	
 	@FXML private Button plus;
 	@FXML private GridPane grille9;
 	@FXML private GridPane grille4;
 	@FXML private Pane paneplus;
+	@FXML private Pane scores;
 	
 	@FXML private ComboBox<String> level;
 	
@@ -40,11 +42,13 @@ public class ControlleurPagePrincipale implements Initializable {
 				    	case "9*9" :{
 				    		grille4.setVisible(false);
 				    		grille9.setVisible(true);
+				    		gridPaneActive = 9;
 				    		break;
 				    	}
 				    	case "4*4" :{
 				    		grille4.setVisible(true);
 				    		grille9.setVisible(false);
+				    		gridPaneActive = 4;
 				    		break;
 				    	}
 			    	}
@@ -110,5 +114,34 @@ public class ControlleurPagePrincipale implements Initializable {
 			paneplus.setVisible(false);
 		else
 			paneplus.setVisible(true);
+	}
+	
+	@FXML
+	protected void doOuvrir(ActionEvent event) throws IOException {
+		
+	}
+	
+	@FXML
+	protected void doSave(ActionEvent event) throws IOException {
+		
+	}
+	
+	@FXML
+	protected void doScores(ActionEvent event) throws IOException {
+			grille4.setVisible(false);
+    		grille9.setVisible(false);
+    		scores.setVisible(true);
+    		paneplus.setVisible(false);
+	}
+	
+	@FXML
+	protected void doRetour(ActionEvent event) throws IOException {
+		scores.setVisible(false);
+		if(gridPaneActive == 9){
+    		grille9.setVisible(true);
+		}
+		if(gridPaneActive == 4){
+			grille4.setVisible(true);
+		}
 	}
 }

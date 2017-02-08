@@ -4,6 +4,8 @@
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -44,9 +46,9 @@
                   <Button fx:id="plus" layoutX="40.0" layoutY="447.0" mnemonicParsing="false" onAction="#doPlus" prefHeight="33.0" prefWidth="133.0" text="Plus" />
                   <Pane fx:id="paneplus" layoutX="34.0" layoutY="307.0" prefHeight="140.0" prefWidth="148.0" style="-fx-background-color: #a37b49; -fx-border-color: black; -fx-border-width: 3;" visible="false">
                      <children>
-                        <Button layoutX="8.0" layoutY="11.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" text="Ouvrir" />
-                        <Button layoutX="8.0" layoutY="54.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" text="Enregistrer" />
-                        <Button layoutX="8.0" layoutY="98.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" text="Scores" />
+                        <Button layoutX="8.0" layoutY="11.0" mnemonicParsing="false" onAction="#doOuvrir" prefHeight="33.0" prefWidth="133.0" text="Ouvrir" />
+                        <Button layoutX="8.0" layoutY="54.0" mnemonicParsing="false" onAction="#doSave" prefHeight="33.0" prefWidth="133.0" text="Enregistrer" />
+                        <Button layoutX="8.0" layoutY="98.0" mnemonicParsing="false" onAction="#doScores" prefHeight="33.0" prefWidth="133.0" text="Scores" />
                      </children>
                   </Pane>
                </children>
@@ -217,6 +219,22 @@
                               <TextField alignment="CENTER" prefHeight="73.0" prefWidth="55.0" promptText="0" GridPane.rowIndex="3" />
                            </children>
                         </GridPane>
+                        <Pane fx:id="scores" layoutX="77.0" layoutY="25.0" prefHeight="350.0" prefWidth="361.0" style="-fx-background-color: #b8925f;" stylesheets="@Styles.css" visible="false">
+                           <children>
+                              <Label layoutX="5.0" layoutY="3.0" text="Les 10 meilleures Scores" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <TableView layoutX="5.0" layoutY="35.0" prefHeight="313.0" prefWidth="350.0">
+                                 <columns>
+                                    <TableColumn prefWidth="259.0" text="Nom" />
+                                    <TableColumn prefWidth="110.0" text="Score" />
+                                 </columns>
+                              </TableView>
+                              <Button layoutX="235.0" mnemonicParsing="false" onAction="#doRetour" prefHeight="33.0" prefWidth="120.0" text="Retour" />
+                           </children>
+                        </Pane>
                      </children>
                   </Pane>
                </children>

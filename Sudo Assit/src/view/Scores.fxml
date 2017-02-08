@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="462.0" prefWidth="410.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControlleurRDJ">
+   <children>
+      <Pane layoutX="-6.0" prefHeight="465.0" prefWidth="416.0" style="-fx-background-color: #b8925f;" stylesheets="@Styles.css">
+         <children>
+            <Label layoutX="94.0" layoutY="17.0" text="Les 10 meilleures Scores">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TableView layoutX="25.0" layoutY="58.0" prefHeight="380.0" prefWidth="370.0">
+              <columns>
+                <TableColumn prefWidth="259.0" text="Nom" />
+                <TableColumn prefWidth="110.0" text="Score" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
