@@ -226,10 +226,10 @@
                                     <Font name="System Bold" size="20.0" />
                                  </font>
                               </Label>
-                              <TableView layoutX="5.0" layoutY="35.0" prefHeight="313.0" prefWidth="350.0">
+                              <TableView fx:id="tableView" layoutX="5.0" layoutY="35.0" prefHeight="313.0" prefWidth="350.0">
                                  <columns>
-                                    <TableColumn prefWidth="259.0" text="Nom" />
-                                    <TableColumn prefWidth="110.0" text="Score" />
+                                    <TableColumn fx:id="nameS" prefWidth="259.0" text="Nom" />
+                                    <TableColumn fx:id="scoreS" prefWidth="110.0" text="Score" />
                                  </columns>
                               </TableView>
                               <Button layoutX="235.0" mnemonicParsing="false" onAction="#doRetour" prefHeight="33.0" prefWidth="120.0" text="Retour" />

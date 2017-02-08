@@ -1,5 +1,6 @@
 package controller;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -13,10 +14,14 @@ import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import model.Score;
 
 public class ControlleurPagePrincipale implements Initializable {
 	
@@ -27,6 +32,11 @@ public class ControlleurPagePrincipale implements Initializable {
 	@FXML private GridPane grille4;
 	@FXML private Pane paneplus;
 	@FXML private Pane scores;
+	
+	@FXML private TableView<Score> tableView;
+	
+	@FXML private TableColumn nameS;
+	@FXML private TableColumn scoreS;
 	
 	@FXML private ComboBox<String> level;
 	
@@ -118,16 +128,23 @@ public class ControlleurPagePrincipale implements Initializable {
 	
 	@FXML
 	protected void doOuvrir(ActionEvent event) throws IOException {
-		
+		paneplus.setVisible(false);
+		FileChooser fileChooser = new FileChooser();
+		fileChooser.setTitle("Open Resource File");
+		fileChooser.showOpenDialog(tableView.getScene().getWindow());
 	}
 	
 	@FXML
 	protected void doSave(ActionEvent event) throws IOException {
-		
+		paneplus.setVisible(false);
+		FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Save Partie");
+        File file = fileChooser.showSaveDialog(tableView.getScene().getWindow());
 	}
 	
 	@FXML
 	protected void doScores(ActionEvent event) throws IOException {
+			tableView.getItems().addAll(new Score("Pierre",10),new Score("Yves",7),new Score("Albert",13));
 			grille4.setVisible(false);
     		grille9.setVisible(false);
     		scores.setVisible(true);
