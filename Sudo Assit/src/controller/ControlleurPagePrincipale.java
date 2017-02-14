@@ -35,8 +35,8 @@ public class ControlleurPagePrincipale implements Initializable {
 	
 	@FXML private TableView<Score> tableView;
 	
-	@FXML private TableColumn nameS;
-	@FXML private TableColumn scoreS;
+	@FXML private TableColumn<Score, String> nameS;
+	@FXML private TableColumn<Score, String> scoreS;
 	
 	@FXML private ComboBox<String> level;
 	
@@ -144,7 +144,9 @@ public class ControlleurPagePrincipale implements Initializable {
 	
 	@FXML
 	protected void doScores(ActionEvent event) throws IOException {
-			tableView.getItems().addAll(new Score("Pierre",10),new Score("Yves",7),new Score("Albert",13));
+			tableView.getItems().addAll(new Score("Albert",13),new Score("Pierre",10),new Score("Yves",7));
+			nameS.setCellValueFactory(cellData -> cellData.getValue().nameProperty());
+			scoreS.setCellValueFactory(cellData -> cellData.getValue().scoreStringProperty());
 			grille4.setVisible(false);
     		grille9.setVisible(false);
     		scores.setVisible(true);
